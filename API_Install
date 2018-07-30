@@ -1,0 +1,107 @@
+
+Reference : https://medium.com/@moshe.livne/training-tensorflow-for-free-pet-object-detection-api-sample-trained-on-google-collab-c2e65f4a9949
+
+!apt-get install protobuf-compiler python-pil python-lxml python-tk
+!pip install Cython
+!pip install jupyter
+!pip install matplotlib
+
+
+!apt-get install protobuf-compiler python-pil python-lxml python-tk
+!pip install Cython
+!pip install jupyter
+!pip install matplotlib
+
+
+!apt-get install protobuf-compiler python-pil python-lxml python-tk
+!pip install Cython
+!pip install jupyter
+!pip install matplotlib
+
+
+cd /content/models/research
+!mkdir train eval
+%set_env PYTHONPATH=/content/models/research:/content/models/research/slim
+
+
+!protoc object_detection/protos/*.proto --python_out=.
+
+
+!python object_detection/builders/model_builder_test.py
+
+
+# Get Oxford Dataset
+
+!wget http://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz
+!wget http://www.robots.ox.ac.uk/~vgg/data/pets/data/annotations.tar.gz
+!tar -xvf images.tar.gz
+!tar -xvf annotations.tar.gz
+
+!python object_detection/dataset_tools/create_pet_tf_record.py \
+ --label_map_path=object_detection/data/pet_label_map.pbtxt \
+ --data_dir=`pwd` \
+ --output_dir=`pwd`
+!ls *.record
+
+
+!wget http://storage.googleapis.com/download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz
+!tar -xvf faster_rcnn_resnet101_coco_11_06_2017.tar.gz
+!cp faster_rcnn_resnet101_coco_11_06_2017/model.ckpt.* .
+
+
+!cp object_detection/samples/configs/faster_rcnn_resnet101_pets.config .
+!sed -i “s|PATH_TO_BE_CONFIGURED|/content/models/research|g” faster_rcnn_resnet101_pets.config
+!sed -i “s|/content/models/research/pet_label_map.pbtxt|/content/models/research/object_detection/data/pet_label_map.pbtxt|g” faster_rcnn_resnet101_pets.config
+!sed -i “s|/content/models/research/pet_train.record|/content/models/research/pet_train_with_masks.record|g” faster_rcnn_resnet101_pets.config
+!sed -i “s|/content/models/research/pet_val.record|/content/models/research/pet_val_with_masks.record|g” faster_rcnn_resnet101_pets.config
+
+# Tensorboard
+! wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+! unzip ngrok-stable-linux-amd64.zip
+
+get_ipython().system_raw(‘tensorboard --logdir /content/models/research --host 0.0.0.0 --port 6006 &’)
+
+get_ipython().system_raw(‘./ngrok http 6006 &’)
+
+
+! curl -s http://localhost:4040/api/tunnels | python3 -c \
+ “import sys, json; print(json.load(sys.stdin)[‘tunnels’][0][‘public_url’])”
+ 
+ 
+ # Train model
+ get_ipython().system_raw('python object_detection/train.py \
+--logtostderr \
+--pipeline_config_path=/content/models/research/faster_rcnn_resnet101_pets.config \
+--train_dir=/content/models/research/train 2>&1 /content/log/tb.log &')
+
+!rm -r exported_graphs; mkdir exported_graphs
+!export CHECKPOINT_NUMBER=NNNNN; python object_detection/export_inference_graph.py \
+--input_type image_tensor \
+--pipeline_config_path faster_rcnn_resnet101_pets.config \
+--trained_checkpoint_prefix train/model.ckpt-${CHECKPOINT_NUMBER} \
+--output_directory exported_graphs
+
+!zip -r exp_g.zip exported_graphs
+
+
+# Install the PyDrive wrapper & import libraries.
+# This only needs to be done once in a notebook.
+!pip install -U -q PyDrive
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+from google.colab import auth
+from oauth2client.client import GoogleCredentials
+# Authenticate and create the PyDrive client.
+# This only needs to be done once in a notebook.
+auth.authenticate_user()
+gauth = GoogleAuth()
+gauth.credentials = GoogleCredentials.get_application_default()
+drive = GoogleDrive(gauth)
+
+# Create & upload a file.
+uploaded = drive.CreateFile({‘title’: ‘exp_g.zip’})
+uploaded.SetContentFile(‘exp_g.zip’)
+uploaded.Upload()
+print(‘Uploaded file with ID {}’.format(uploaded.get(‘id’)))
+
+
