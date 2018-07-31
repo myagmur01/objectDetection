@@ -13,6 +13,9 @@ All object instances are annotated with a detailed segmentation mask. Annotation
 --> Pascal
 
 
+--> Oid
+
+
 
 # objectDetection
 Tensorflow Object Detection API
