@@ -7,13 +7,27 @@ The COCO Object Detection Task is designed to push the state of the art in objec
 The COCO train, validation, and test sets, containing more than 200,000 images and 80 object categories,
 All object instances are annotated with a detailed segmentation mask. Annotations on the training and validation sets (with over 500,000 object instances segmented) are publicly available.
 
+
+mAP
+Classes 
+Occurence
+
 --> KITTI
 
+
+mAP
 
 --> Pascal
 
 
 --> Oid
+
+
+--> AVA v2.1 trained models
+
+
+--> Open Images-trained models
+
 
 
 
