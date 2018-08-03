@@ -29,25 +29,12 @@ FLAGS = flags.FLAGS
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
-    if row_label == 'D00':
+    if row_label == 'player':
         return 1
-    elif row_label == 'D01':
+    elif row_label == 'ball':
         return 2
-    elif row_label == 'D10':
+    elif row_label == 'basket':
         return 3
-    elif row_label == 'D11':
-        return 4
-    elif row_label == 'D20':
-        return 5
-    elif row_label == 'D30':
-        return 6
-    elif row_label == 'D40':
-        return 7
-    elif row_label == 'D43':
-        return 8
-    elif row_label == 'D44':
-        return 9
-
     else:
         None
 

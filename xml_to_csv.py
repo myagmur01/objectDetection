@@ -8,7 +8,6 @@ def xml_to_csv(path):
     #xml_list = []
     value = []
     for xml_file in glob.glob(path + '/*.xml'):
-        print(xml_file)
         tree = ET.parse(xml_file)
         root = tree.getroot()
         
@@ -34,7 +33,7 @@ def xml_to_csv(path):
 
 
 def main():
-    for folder in ['train','test']:
+    for folder in ['train','val']:
         image_path = os.path.join(os.getcwd(), ('images/' + folder))
         xml_df = xml_to_csv(image_path)
         xml_df.to_csv(('images/' + folder + '_labels.csv'), index=None)
