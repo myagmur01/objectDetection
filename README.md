@@ -1,7 +1,7 @@
  
 - Object Detection by Tensorflow Object Detection API 
-... Workshop Tutorial
-... August 2, 2018
+...Workshop Tutorial
+...August 2, 2018
 
 
 - About Repo
