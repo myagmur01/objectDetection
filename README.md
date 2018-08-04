@@ -3,11 +3,11 @@
  - Workshop Tutorial
  - August 2, 2018
  
-  Object detection has a long history in computer vision community, usually considered as adifficult task in terms of computation and accuracy. However , in the recent years, it has becomevery common and easy to implement, thanks to the deep learning and convolutions. The difference from the classification tasks, in general, if we aim to identify the location of objects ordetect the number of instances in an image, we use object detection. 
+...Object detection has a long history in computer vision community, usually considered as adifficult task in terms of computation and accuracy. However , in the recent years, it has becomevery common and easy to implement, thanks to the deep learning and convolutions. The difference from the classification tasks, in general, if we aim to identify the location of objects ordetect the number of instances in an image, we use object detection. 
   
-  There are two main approaches to apply the object detection which are single-stage andtwo-stage detection. Both have even several ways to be implemented. In this workshop , we are mostly going to talk about RCNN-Family(Faster-RCNN , Fast-RCNN,RCNN). In the implementation , we will use Google's Tensorflow Object Detection API which covers both singleand two-stage models at whole. 
+...There are two main approaches to apply the object detection which are single-stage andtwo-stage detection. Both have even several ways to be implemented. In this workshop , we are mostly going to talk about RCNN-Family(Faster-RCNN , Fast-RCNN,RCNN). In the implementation , we will use Google's Tensorflow Object Detection API which covers both singleand two-stage models at whole. 
   
-  The TensorFlow Object Detection API is an open source framework built on top of TensorFlowthat makes it easy to construct, train and deploy object detection models. This API is capable ofidentifying many types of objects like cars, pedestrians, person, kite, dog and many more. Weare going to learn how to use this API for our specific problems by preparing our own datapipeline and apply on different models (including two-stages like YOLO and SSD).
+...The TensorFlow Object Detection API is an open source framework built on top of TensorFlowthat makes it easy to construct, train and deploy object detection models. This API is capable ofidentifying many types of objects like cars, pedestrians, person, kite, dog and many more. Weare going to learn how to use this API for our specific problems by preparing our own datapipeline and apply on different models (including two-stages like YOLO and SSD).
  
  
 ![alt text](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/img/kites_detections_output.jpg "kites")
