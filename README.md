@@ -37,22 +37,22 @@
 ### 1.2. Landmark Papers
 
 >> 2-Stage Detectors
- - [Mask-RCNN](Link here)
- - [Faster-RCNN](Link here)
- - [Fast-RCNN](Link here)
- - [RCNN](Link here)
- - [Selective Search](Link here)
+ - [Mask-RCNN](https://arxiv.org/pdf/1703.06870)
+ - [Faster-RCNN](https://arxiv.org/pdf/1506.01497)
+ - [Fast-RCNN](https://arxiv.org/pdf/1504.08083)
+ - [RCNN](https://arxiv.org/pdf/1311.2524)
+ - [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf)
  
 >> 1-Stage Detectors
- - [YOLO](Link here)
- - [SSD](Link here)
- - [OverFeat](Link here)
+ - [YOLO](https://arxiv.org/pdf/1506.02640)
+ - [SSD](https://arxiv.org/abs/1512.02325)
+ - [OverFeat](https://arxiv.org/abs/1312.6229)
 
 >> Review
- - [Trade-off](Link here)
+ - [Speed/Accuracy Trade-off](https://arxiv.org/abs/1611.10012)
 
 
-### 1.3. Architectures
+### 1.3. Feature Extractors
 
 - VGG
 - ZFNet
@@ -61,24 +61,22 @@
 - ResNet
 - DenseNet
 
-
-
 ## 2. Prepare Input Pipeline
 
 ### 2.1.Download Images
 
->> Google Advanced Image Search
- - birds , tigers , rabbits etc..
+- Google Advanced Image Search
+ * birds , tigers , rabbits etc..
  
->> Downloader Tools (Chrome Extensions):
- - Download All Images 2.0.4
- - Fatkun Batch Download Image 2.23
+- Downloader Tools (Chrome Extensions):
+ * Download All Images 2.0.4
+ * Fatkun Batch Download Image 2.23
 
 
 ### 2.2. Annotate Objects
 
 - Bounding Box
---> [LabelImg](https://github.com/tzutalin/labelImg)
+ * [LabelImg](https://github.com/tzutalin/labelImg)
 - Polygon
 - Semantic Segmentation
 - Bounding Box
@@ -94,7 +92,7 @@
 
 ### 2.4. API Introduction
 
- - [Download API](Link here)
+ - [Download API](https://github.com/tensorflow/models/tree/master/research/object_detection)
  - [configuration files](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
  - [configuration settings](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md)
  - [models/research/object_detection/g3doc/detection_model_zoo.md](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
@@ -111,5 +109,10 @@
 
 ## 4. Useful Links (References)
 - [Protobuf](https://towardsdatascience.com/3-steps-to-update-parameters-of-faster-r-cnn-ssd-models-in-tensorflow-object-detection-api-7eddb11273ed)
-- [BlogPost](https://blog.playment.io/comparing-image-annotation-types/)
+- [Annotation](https://blog.playment.io/comparing-image-annotation-types/)
+
+- [Tryo Labs Object Detection Tutorial](https://tryolabs.com/blog/2018/01/18/faster-r-cnn-down-the-rabbit-hole-of-modern-object-detection/)
+-[Edge Electronics Tutorial](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10)
+- [Speed/accuracy trade-off by Jonathan Hui](https://medium.com/@jonathan_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359)
+- [Tensorflow Object Detection on Google Colab](https://medium.com/@moshe.livne/training-tensorflow-for-free-pet-object-detection-api-sample-trained-on-google-collab-c2e65f4a9949)
 
