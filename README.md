@@ -36,20 +36,20 @@
 
 ### 1.2. Landmark Papers
 
->> 2-Stage Detectors
- - [Mask-RCNN](https://arxiv.org/pdf/1703.06870)
- - [Faster-RCNN](https://arxiv.org/pdf/1506.01497)
- - [Fast-RCNN](https://arxiv.org/pdf/1504.08083)
- - [RCNN](https://arxiv.org/pdf/1311.2524)
- - [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf)
+- 2-Stage Detectors
+  * [Mask-RCNN](https://arxiv.org/pdf/1703.06870)
+  * [Faster-RCNN](https://arxiv.org/pdf/1506.01497)
+  * [Fast-RCNN](https://arxiv.org/pdf/1504.08083)
+  * [RCNN](https://arxiv.org/pdf/1311.2524)
+  * [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf)
  
->> 1-Stage Detectors
- - [YOLO](https://arxiv.org/pdf/1506.02640)
- - [SSD](https://arxiv.org/abs/1512.02325)
- - [OverFeat](https://arxiv.org/abs/1312.6229)
+- 1-Stage Detectors
+  * [YOLO](https://arxiv.org/pdf/1506.02640)
+  * [SSD](https://arxiv.org/abs/1512.02325)
+  * [OverFeat](https://arxiv.org/abs/1312.6229)
 
->> Review
- - [Speed/Accuracy Trade-off](https://arxiv.org/abs/1611.10012)
+- A Comprehensive Review
+  * [Speed/Accuracy Trade-off](https://arxiv.org/abs/1611.10012)
 
 
 ### 1.3. Feature Extractors
