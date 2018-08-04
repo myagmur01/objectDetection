@@ -1,15 +1,13 @@
  
 #### Object Detection by Tensorflow Object Detection API 
- ...Workshop Tutorial
- ...August 2, 2018
+ - Workshop Tutorial
+ - August 2, 2018
  
-![alt text](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/img/kites_detections_output.jpg "Logo Title Text 1")
+![alt text](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/img/kites_detections_output.jpg "kites")
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+---
 
-
-
-- About Repo
+- About the Repo
    * API     : Tensorflow's Object Detection API
    * ckpt    : trained model parameters saved
    * config  : Configuration settings
