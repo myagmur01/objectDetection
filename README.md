@@ -20,7 +20,8 @@
       * converted tfrecord files
       * labelmap.pbtxt : defines labels
    * pretrained   : Pretrained model parameters 
-   
+
+---
  
 ## 1. Introduction
 
