@@ -66,11 +66,11 @@
 ### 2.1.Download Images
 
 - Google Advanced Image Search
- * birds , tigers , rabbits etc..
+  * birds , tigers , rabbits etc..
  
 - Downloader Tools (Chrome Extensions):
- * Download All Images 2.0.4
- * Fatkun Batch Download Image 2.23
+  * Download All Images 2.0.4
+  * Fatkun Batch Download Image 2.23
 
 
 ### 2.2. Annotate Objects
