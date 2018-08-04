@@ -2,6 +2,20 @@
 - Object Detection by Tensorflow Object Detection API 
 - Workshop Tutorial
 - August 2, 2018
+
+- API     : Tensorflow's Object Detection API
+- ckpt    : trained model parameters saved
+- config  : Configuration settings
+- eval    : Evaluation result folder
+- figures : helper figures for understanding Faster-RCNN
+- frozen_model : Inference graph of trained model
+- images : 
+   * train/val/test data
+   * converted csv files
+   * converted tfrecord files
+   * labelmap.pbtxt : defines labels
+- pretrained   : Pretrained model parameters 
+   
  
 ## 1. Introduction
 
