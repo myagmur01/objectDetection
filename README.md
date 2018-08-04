@@ -76,7 +76,7 @@
 ### 2.2. Annotate Objects
 
 - Bounding Box
- * [LabelImg](https://github.com/tzutalin/labelImg)
+  *[LabelImg](https://github.com/tzutalin/labelImg)
 - Polygon
 - Semantic Segmentation
 - Bounding Box
@@ -93,9 +93,9 @@
 ### 2.4. API Introduction
 
  - [Download API](https://github.com/tensorflow/models/tree/master/research/object_detection)
- - [configuration files](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
- - [configuration settings](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md)
- - [models/research/object_detection/g3doc/detection_model_zoo.md](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+ - [Configuration files](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
+ - [Configuration settings](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md)
+ - [Pretrained Models](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 
 ## 3. Set Colab Environment
 
