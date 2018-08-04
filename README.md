@@ -1,7 +1,16 @@
  
-* Object Detection by Tensorflow Object Detection API 
-...Workshop Tutorial
-...August 2, 2018
+#### Object Detection by Tensorflow Object Detection API 
+ ...Workshop Tutorial
+ ...August 2, 2018
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
 
 
 - About Repo
