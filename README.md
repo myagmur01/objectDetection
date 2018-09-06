@@ -53,6 +53,7 @@
 - 1-Stage Detectors
   * [YOLO](https://arxiv.org/pdf/1506.02640)
   * [SSD](https://arxiv.org/abs/1512.02325)
+  * [RetinaNet](https://arxiv.org/pdf/1708.02002.pdf)
   * [OverFeat](https://arxiv.org/abs/1312.6229)
 
 - A Comprehensive Review
