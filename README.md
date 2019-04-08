@@ -127,6 +127,32 @@
 
  
 ```bash
-asdasd
+├───data
+├───images
+├───src
+│   ├───chainercv
+│   │   └───train
+│   ├───data
+│   ├───keras_retinanet
+│   │   ├───keras_retinanet
+│   │   │   ├───backend
+│   │   │   ├───bin
+│   │   │   ├───callbacks
+│   │   │   ├───layers
+│   │   │   ├───models
+│   │   │   ├───preprocessing
+│   │   │   └───utils
+│   │   ├───solar_panel
+│   │   └───tests
+│   │       ├───backend
+│   │       ├───bin
+│   │       ├───layers
+│   │       ├───models
+│   │       ├───preprocessing
+│   │       └───utils
+│   └───utils
+└───tf_od_eval
+    └───protos
+        └───__pycache__
 ```
 
